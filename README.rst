@@ -15,5 +15,5 @@ Shutdown
 
 ::
 
-    bin/jukebox jukebox_live_indexer --stop
+    bin/jukebox jukebox_live_indexer --path=/path/to/library --stop
 

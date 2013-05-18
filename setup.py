@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name="jukebox-live-indexer",
     packages=find_packages(),
-    version="0.1",
+    version="0.1.1",
     description="Background library indexing service for jukebox",
     author="Jens Nistler",
     author_email="opensource@jensnistler.de",
