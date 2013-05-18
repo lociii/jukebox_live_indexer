@@ -1,0 +1,7 @@
+.idea/
+dist/
+jukebox_live_indexer.egg-info/
+*.pyc
+*.pid
+build/
+*.sw*
