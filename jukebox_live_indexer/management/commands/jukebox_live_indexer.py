@@ -23,6 +23,11 @@ class EventHandler(FileSystemEventHandler):
     def on_modified(self, event):
         self.on_created(event)
 
+    def on_deleted(self, event):
+        if event.is_directory:
+            event.src_path = os.path.normpath(event.src_path) + os.sep
+        self.indexer.delete(event.src_path)
+
 
 class Command(BaseCommand):
     monitor = None
